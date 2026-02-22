@@ -13,7 +13,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Ad SDK -->
-    <script src='//libtl.com/sdk.js' data-zone='9745051' data-sdk='show_9745051'></script>
+    <script src='//libtl.com/sdk.js' data-zone='10268513' data-sdk='show_10268513'></script>
     <style>
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
@@ -392,8 +392,8 @@
             let adCount = parseInt(localStorage.getItem(`adCount_${fileId}`) || 0);
             try {
                 buttonTextEl.textContent = getText('loading_ad');
-                if (typeof show_9745051 === 'function') {
-                    await show_9745051();
+                if (typeof show_10268513 === 'function') {
+                    await show_10268513();
                 } else {
                     console.warn("Ad SDK function not found, simulating ad watch for testing.");
                     await new Promise(r => setTimeout(r, 1000));
